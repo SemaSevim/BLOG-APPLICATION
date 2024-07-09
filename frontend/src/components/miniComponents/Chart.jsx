@@ -61,7 +61,7 @@ const Chart = () => {
   };
   return (
     <section className="chart-container" style={{ height: "90vh" }}>
-      <h3>BLOG ANALYTICS</h3>
+      <h3>Blog Analiz Paneli</h3>
       <Doughnut data={data} style={{ height: "550px" }} />
     </section>
   );

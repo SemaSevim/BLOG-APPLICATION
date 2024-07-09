@@ -20,47 +20,45 @@ const Footer = () => {
     >
       <div className="container">
         <div className="about">
-          <h3>About</h3>
+          <h3>İletişim</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consectetur possimus sed praesentium! Et sunt, distinctio veniam
-            ullam, nesciunt ex laudantium quidem error sint, eum explicabo.
+          Reklam, Sponsorluk, Soru ve Tavsiyeleriniz için: 
           </p>
           <p>
-            <span>Email:</span>semasevim345@gmail.com
+            <span>Email:</span>semasevim@gmail.com
           </p>
           <p>
             <span>Phone:</span>0123987123
           </p>
         </div>
         <div className="quick_links">
-          <h3>Quick Links</h3>
+          <h3>Sayfalar</h3>
           <ul>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/blogs"}>Blogs</Link>
-            <Link to={"/about"}>About</Link>
+            <Link to={"/"}>Anasayfa</Link>
+            <Link to={"/blogs"}>Bloglar</Link>
+            <Link to={"/about"}>Hakkımızda</Link>
             <Link to={"/dashboard"}>Dashboard</Link>
           </ul>
         </div>
         <div className="categories">
-          <h3>Categories</h3>
+          <h3>Katagoriler</h3>
           <ul>  
-            <li>Europe</li>
-            <li>Asia</li>
-            <li>Africa</li>
-            <li>Antarctica</li>
-            <li>Middle East</li>
-            <li>America</li>
+            <li>Avrupa</li>
+            <li>Asya</li>
+            <li>Afrika</li>
+            <li>Güney Amerika</li>
+            <li>Kuzey Amerika</li>
+            <li>Avustralya</li>
           </ul>
         </div>
         <div className="news_letter">
           <div>
-            <h3>Weekly Newletter</h3>
-            <p>Get blog articles and offer via email</p>
+            <h3>Haftalık Bülten</h3>
+            <p>Yayınlanan en yeni içeriklerimizden haberdar olmak için Abone Olun!</p>
           </div>
           <div>
-            <input type="text" placeholder={`Your Email`} />
-            <button>Subscribe</button>
+            <input type="text" placeholder={`Email`} />
+            <button>Abone Ol</button>
           </div>
         </div>
       </div>
@@ -76,7 +74,7 @@ const Footer = () => {
           <Link to={"https://www.linkedin.com/in/semasevim/"} target="_blank">
             <AiFillYoutube />
           </Link>
-          <Link to={"/"} target="_blank">
+          <Link to={"https://github.com/SemaSevim/"} target="_blank">
             <AiFillLinkedin />
           </Link>
         </div>

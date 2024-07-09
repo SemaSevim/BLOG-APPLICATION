@@ -129,22 +129,22 @@ const CreateBlog = () => {
 
   return (
     <section className="create-blog">
-      <h3>CREATE BLOG</h3>
+      <h3>Blog Hazırla</h3>
       <div className="container">
         <form onSubmit={handleBlog}>
           <div className="category-box">
-            <label>Category</label>
+            <label>Kategori</label>
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value="">Select Blog Category</option>
-              <option value="Europe">Europe</option>
-              <option value="Asia">Asia</option>
-              <option value="Africa">Africa</option>
-              <option value="Antarctica">Antarctica</option>
-              <option value="Middle East">Middle East</option>
-              <option value="America">America</option>
+              <option value="">Kategori Seçiniz</option>
+              <option value="Avrupa">Avrupa</option>
+              <option value="Asya">Asya</option>
+              <option value="Afrika">Afrika</option>
+              <option value="Güney Amerika">Güney Amerika</option>
+              <option value="Kuzey Amerika">Kuzey Amerika</option>
+              <option value="Avustralya">Avustralya</option>
             </select>
           </div>
           <input
@@ -154,7 +154,7 @@ const CreateBlog = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <label>BLOG MAIN IMAGE</label>
+            <label>Giriş Resmi</label>
             <img
               src={mainImagePreview ? `${mainImagePreview}` : "/imgPL.webp"}
               alt="mainImg"
@@ -169,14 +169,14 @@ const CreateBlog = () => {
           <textarea
             rows="25"
             className="intro"
-            placeholder="BLOG INTRO..... (Must contain at least 250 characters!)"
+            placeholder="Giriş Metni ..... (En az 250 karakter içermelidir!)"
             value={intro}
             onChange={(e) => setIntro(e.target.value)}
           />
           <div className="sub-para">
             <input
               type="text"
-              placeholder="Paragraph one title"
+              placeholder="Birinci alt başlık"
               value={paraOneTitle}
               onChange={(e) => setParaOneTitle(e.target.value)}
             />
@@ -193,7 +193,7 @@ const CreateBlog = () => {
             />
             <textarea
               rows="10"
-              placeholder="Blog First Sub Paragraph Comes Here..."
+              placeholder="Birinci alt paragraf..."
               value={paraOneDescription}
               onChange={(e) => setParaOneDescription(e.target.value)}
             />
@@ -251,13 +251,13 @@ const CreateBlog = () => {
             />
           </div>
           <div className="publish-box">
-            <label>Wants to publish now?</label>
+            <label>Şimdi yayınlamak istiyor musunuz?</label>
             <select
               value={published}
               onChange={(e) => setPublished(e.target.value === "true")}
             >
-              <option value={true}>Yes</option>
-              <option value={false}>No</option>
+              <option value={true}>Yayınla</option>
+              <option value={false}>Beklet</option>
             </select>
           </div>
           <button className="create-btn" type="submit">

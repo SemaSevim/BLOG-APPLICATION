@@ -46,28 +46,28 @@ const Navbar = () => {
     >
       <nav>
         <div className="logo">
-          Travel<span>Blog</span>
+          Göçebe<span>Blog</span>
         </div>
         <div className={show ? "links show" : "links"}>
           <ul>
             <li>
               <Link to={"/"} onClick={handleNavbar}>
-                Home
+                Anasayfa
               </Link>
             </li>
             <li>
               <Link to={"/blogs"} onClick={handleNavbar}>
-                Blogs
+                Bloglar
               </Link>
             </li>
             <li>
               <Link to={"/authors"} onClick={handleNavbar}>
-                All Authers
+                Yazarlar
               </Link>
             </li>
             <li>
               <Link to={"/about"} onClick={handleNavbar}>
-                About
+                Hakkımızda
               </Link>
             </li>
           </ul>
@@ -92,19 +92,19 @@ const Navbar = () => {
                 onClick={handleNavbar}
                 className="dashboard-btn"
               >
-                DASHBOARD
+                Dashboard
               </Link>
             ) : (
               ""
             )}
             {!isAuthenticated ? (
               <Link to={"/login"} onClick={handleNavbar} className="login-btn">
-                LOGIN
+                Giriş
               </Link>
             ) : (
               <div>
                 <button className="logout-btn" onClick={handleLogout}>
-                  LOGOUT
+                  Çıkış
                 </button>
               </div>
             )}
